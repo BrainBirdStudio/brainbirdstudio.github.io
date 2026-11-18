@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – Brain Bird Studio</title>
+<style>
+ :root { --bg:#0e1420; --fg:#ece6da; --muted:#b9b2a5; --accent:#e9b155; --field:#172133; }
+ body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 Georgia, "Times New Roman", serif; }
+ main { max-width:780px; margin:0 auto; padding:32px 16px 64px; }
+ h1 { color:var(--accent); font-size:2rem; }
+ a { color:var(--accent); } nav a { margin-right:16px; }
+ label { display:block; margin-top:16px; }
+ input[type=text], input[type=email], textarea { width:100%; box-sizing:border-box; padding:10px; margin-top:4px; background:var(--field);
+   color:var(--fg); border:1px solid #3a4560; border-radius:6px; font:inherit; }
+ textarea { min-height:160px; }
+ .consent { display:flex; gap:10px; align-items:flex-start; margin-top:18px; }
+ .consent input { margin-top:6px; }
+ .hp { position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden; }
+ button { margin-top:20px; padding:10px 22px; background:var(--accent); color:#1a1408; border:0; border-radius:6px; font:inherit; cursor:pointer; }
+ .muted { color:var(--muted); font-size:.92rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Brain Bird Studio</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="impressum.html">Legal Notice (Impressum)</a></nav>
+<h1>Contact</h1>
+<p>Send us a message with this form. We usually reply by email. You can also write to <a href="mailto:timsussnapp@gmail.com">timsussnapp@gmail.com</a>.</p>
+<form action="https://formcarry.com/s/EDFXA7_ARD2" method="POST" accept-charset="UTF-8">
+ <label for="name">Name</label>
+ <input type="text" id="name" name="name" required maxlength="120" autocomplete="name">
+ <label for="email">Email address (so we can reply)</label>
+ <input type="email" id="email" name="email" required maxlength="200" autocomplete="email">
+ <label for="message">Message</label>
+ <textarea id="message" name="message" required maxlength="5000"></textarea>
+ <div class="hp" aria-hidden="true"><label for="_gotcha">Leave this field empty</label><input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+ <div class="consent"><input type="checkbox" id="consent" name="consent" value="yes" required>
+  <label for="consent" style="margin-top:0">I agree that my details are processed to answer my request, as described in the <a href="privacy.html#contact-form">Privacy Policy</a>.</label></div>
+ <button type="submit">Send message</button>
+</form>
+<p class="muted">The form is processed by the form service Formcarry; after sending, Formcarry shows you a confirmation page on its own website. See the <a href="privacy.html#contact-form">Privacy Policy</a>. No tracking, no cookies on this website.</p>
+</main>
+</body>
+</html>
